@@ -1,69 +1,89 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        monthly-status
-      </h1>
-      <h2 class="subtitle">
-        Monthly state of account
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div id="main-container">
+    <header>
+      <div>
+        <h6 class="title my-1">ESTADO DE CUENTA MENSUAL</h6>
+        <h6 class="subtitle my-0">DE APORTES OBLIGATORIOS</h6>
+        <p class="my-0">mes / año</p>
       </div>
-    </div>
+      <logo />
+    </header>
+    <ClientInfo />
+    <MonthlySummary />
+    <TypeFund />
+    <MonthlyMovemment />
+    <ChartLine />
+    <Banner />
+    <Footer />
+    <header>
+      <div>
+        <h6 class="title my-1">ESTADO DE CUENTA MENSUAL</h6>
+        <h6 class="subtitle my-0">ESTADO DE CUENTA MENSUAL</h6>
+        <p class="my-0">mes / año</p>
+      </div>
+    </header>
+    <TypeFund />
+    <TypeFund />
+    <VountaryFund />
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from "~/components/Logo.vue";
+import ClientInfo from "~/components/Client-info.vue";
+import MonthlySummary from "~/components/Monthly-summary.vue";
+import TypeFund from "~/components/Type-fund.vue";
+import MonthlyMovemment from "~/components/Monthly-movemment.vue";
+import ChartLine from "~/components/Chart-line.vue";
+import ChartBar from "~/components/Chart-bar.vue";
+import Banner from "~/components/Banner.vue";
+import Footer from "~/components/Footer.vue";
+import VountaryFund from "~/components/Voluntary-fund.vue";
 
 export default {
   components: {
-    Logo
+    Logo,
+    ClientInfo,
+    MonthlySummary,
+    TypeFund,
+    MonthlyMovemment,
+    ChartLine,
+    ChartBar,
+    Banner,
+    Footer,
+    VountaryFund
   }
-}
+};
 </script>
 
 <style>
-.container {
+#main-container {
+  width: 70vw;
   margin: 0 auto;
-  min-height: 100vh;
+}
+@media (max-width: 600px) {
+  #main-container {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
+header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #cf1b45;
+  color: white;
+  height: 5rem;
+  padding: 10px;
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  font-family: "Avenir", Arial, sans-serif;
+  font-weight: bold;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  font-weight: normal;
 }
 
 .links {

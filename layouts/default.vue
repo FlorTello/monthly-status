@@ -5,9 +5,26 @@
 </template>
 
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/AvenirLTStd-Book.otf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/AvenirLTStd-Roman.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/fonts/avenir/AvenirLTStd-black.otf");
+  font-weight: bold;
+}
+
+html,
+* {
+  font-family: "Avenir", Arial, sans-serif;
+  font-weight: normal;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -24,32 +41,83 @@ html {
   margin: 0;
 }
 
-.button--green {
+.icon--answer {
   display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+  background-image: url("../assets/imgs/answer-icon.svg");
+  background-repeat: no-repeat;
+  height: 1rem;
+  width: 1rem;
+  background-size: contain;
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
+.icon--check {
   display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+  background-image: url("../assets/imgs/check-icon.svg");
+  background-repeat: no-repeat;
+  height: 0.8rem;
+  width: 0.8rem;
+  background-size: contain;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.icon--arrow {
+  display: inline-block;
+  background-image: url("../assets/imgs/arrow-right-icon.svg");
+  background-repeat: no-repeat;
+  height: 0.8rem;
+  width: 0.8rem;
+  background-size: contain;
+}
+
+.icon--play {
+  display: inline-block;
+  background-image: url("../assets/imgs/play-icon.svg");
+  background-repeat: no-repeat;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-size: contain;
+}
+
+.button-icon {
+  min-width: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-outline-dark {
+  border-color: #18618f;
+}
+.text-5 {
+  font-size: 5px;
+}
+.text-6 {
+  font-size: 6px;
+}
+.text-7 {
+  font-size: 7px;
+}
+.text-8 {
+  font-size: 8px;
+}
+.text-9 {
+  font-size: 9px;
+}
+.text-10 {
+  font-size: 10px;
+}
+
+.blue-color {
+  color: #18618f;
+}
+
+.text-grey {
+  color: #575756;
+}
+
+.light-blue-color {
+  color: #5a9cbc;
+}
+
+.text-bold {
+  font-weight: bold;
 }
 </style>
