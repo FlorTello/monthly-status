@@ -13,6 +13,7 @@
     <TypeFund />
     <MonthlyMovemment />
     <ChartLine />
+    <ChartBar />
     <Banner />
     <Footer />
     <header>

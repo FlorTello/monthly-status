@@ -122,7 +122,7 @@
           <h6 class="blue-color text-8">Bonos</h6>
         </div>
         <p class="text-8">2. Bono de Reconocimiento</p>
-        <img class="mx-1 mb-3" src="../assets/imgs/money.svg" width="30" alt="money" />
+        <img class="mx-1 mb-3" src="~/assets//imgs/money.svg" width="30" alt="money" />
         <p class="text-6">
           La situación actual de tu Bono de Reconocimiento es: _____________________,
           su Valor Nominal es: S/ _____________ y el Último Valor Reconocido por la ONP es: S/ _____________

@@ -1,10 +1,11 @@
-# monthly-status
+# About the project
 
-> Monthly state of account
+> Estado de cuenta mensual, para el proyecto se utilizo Nuxt.js, como framework de CSS Bootstrap y FlexBox
+> Lo puedes ver aquí [Here](https://flortello.github.io/monthly-status/)
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
