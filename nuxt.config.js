@@ -3,6 +3,9 @@ module.exports = {
   /*
    ** Headers of the page
    */
+  router: {
+    base: '/monthly-status/',
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
